@@ -129,6 +129,6 @@ public class VarastoTest {
     public void merkkijonoesitysToimii() {
         varasto.lisaaVarastoon(8);
 
-        assertEquals("saldo = 7.0, vielä tilaa 2.0", varasto.toString());
+        assertEquals("saldo = 8.0, vielä tilaa 2.0", varasto.toString());
     }
 }
