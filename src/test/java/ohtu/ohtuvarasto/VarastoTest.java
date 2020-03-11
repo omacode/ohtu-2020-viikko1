@@ -66,26 +66,26 @@ public class VarastoTest {
         assertEquals(0, varasto2.getTilavuus(), vertailuTarkkuus);
     }
     
-    @Test
-    public void toinenKonstruktoriEiLuoNegatiivisenTilavuudenJaSaldonVarastoa() {
-        Varasto varasto2 = new Varasto(-10, -5);
-        assertEquals(0, varasto2.getTilavuus(), vertailuTarkkuus);
-        assertEquals(0, varasto2.getSaldo(), vertailuTarkkuus);
-    }
-    
-    @Test
-    public void toinenKonstruktoriAsettaaSopivanSaldon() {
-        Varasto varasto2 = new Varasto(10, 5);
-        assertEquals(10, varasto2.getTilavuus(), vertailuTarkkuus);
-        assertEquals(5, varasto2.getSaldo(), vertailuTarkkuus);
-    }
-    
-    @Test
-    public void toinenKonstruktoriHukkaaYlimaaraisenSaldon() {
-        Varasto varasto2 = new Varasto(10, 15);
-        assertEquals(10, varasto2.getTilavuus(), vertailuTarkkuus);
-        assertEquals(10, varasto2.getSaldo(), vertailuTarkkuus);
-    }
+//    @Test
+//    public void toinenKonstruktoriEiLuoNegatiivisenTilavuudenJaSaldonVarastoa() {
+//        Varasto varasto2 = new Varasto(-10, -5);
+//        assertEquals(0, varasto2.getTilavuus(), vertailuTarkkuus);
+//        assertEquals(0, varasto2.getSaldo(), vertailuTarkkuus);
+//    }
+//    
+//    @Test
+//    public void toinenKonstruktoriAsettaaSopivanSaldon() {
+//        Varasto varasto2 = new Varasto(10, 5);
+//        assertEquals(10, varasto2.getTilavuus(), vertailuTarkkuus);
+//        assertEquals(5, varasto2.getSaldo(), vertailuTarkkuus);
+//    }
+//    
+//    @Test
+//    public void toinenKonstruktoriHukkaaYlimaaraisenSaldon() {
+//        Varasto varasto2 = new Varasto(10, 15);
+//        assertEquals(10, varasto2.getTilavuus(), vertailuTarkkuus);
+//        assertEquals(10, varasto2.getSaldo(), vertailuTarkkuus);
+//    }
     
     @Test
     public void negatiivisenMaaranLisaysEiMuutaSaldoa() {
